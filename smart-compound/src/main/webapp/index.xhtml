@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui" xmlns:b="http://bootsfaces.net/ui">
+
+<h:head>
+</h:head>
+<h:body>
+	<h:form>
+		<b:container layout="fluid">
+			<b:row>
+				<b:column medium-screen="2" >
+					<p:outputLabel value="Select employee" />
+				</b:column>
+				<b:column medium-screen="10">
+<!-- 					Boot faces needs no converter -->
+					<b:selectOneMenu value="#{employeeBean.selectedEmployee}" >
+						<f:selectItem itemValue="" itemLabel="Select Employee"
+							itemDisabled="true" />
+						<f:selectItems value="#{employeeBean.allEmployees}" var="employee"
+							itemValue="#{employee}" itemLabel="#{employee.name}" />
+					</b:selectOneMenu>
+				</b:column>
+			</b:row>
+			<b:row>
+				<b:column medium-screen="12">
+					<b:commandButton value="print employee" look="success"
+						actionListener="#{employeeBean.printEmployee()}"></b:commandButton>
+				</b:column>
+			</b:row>
+		</b:container>
+	</h:form>
+
+</h:body>
+</html>

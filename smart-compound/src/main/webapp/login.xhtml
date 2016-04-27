@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui" xmlns:b="http://bootsfaces.net/ui">
+
+<h:head>
+	<h:outputStylesheet library="css" name="smart-compound-style.css" />
+	<h:outputScript library="js" name="smart-compound-scripts.js" />
+
+</h:head>  
+<h:body>
+	<h:form>
+		<b:container layout="fluid">
+			<b:row>
+				<b:column medium-screen="12">
+					<b:messages id="message" />
+				</b:column>
+			</b:row>
+			<b:row>
+				<b:column medium-screen="2">
+					<h:outputText value="Username:" />
+				</b:column>
+				<b:column medium-screen="4">
+					<b:inputText placeholder="Username" required="true"
+						requiredMessage="username is requred " />
+				</b:column>
+				<b:column medium-screen="6">
+				</b:column>
+			</b:row>
+			<b:row>
+				<b:column medium-screen="2">
+					<h:outputText value="Password:" />
+				</b:column>
+				<b:column medium-screen="4">
+					<b:inputSecret placeholder="Password" required="true"
+						requiredMessage="Password is requred " />
+				</b:column>
+				<b:column medium-screen="6">
+
+				</b:column>
+			</b:row>
+			<b:row>
+				<b:column span="2" offset="2">
+					<b:commandButton value="login"
+						actionListener="#{loginBean.login()}" look="primary"
+						style="width:100%" />
+				</b:column>
+				<b:column span="2">
+					<b:commandButton value="password forgotten" look="danger"
+						style="width:100%" />
+				</b:column>
+				<b:column span="2">
+					<b:commandButton value="demo" look="success" ajax="false" immediate="true"
+						action="/index.xhtml" style="width:100%" />
+				</b:column>
+			</b:row>
+		</b:container>
+
+	</h:form>
+
+</h:body>
+</html>

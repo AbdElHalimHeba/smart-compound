@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html">
+
+<head>
+<meta charset="utf-8"></meta>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+<title>Smart Compound | Admin Dashboard</title>
+<!-- Tell the browser to be responsive to screen width -->
+<meta
+	content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+	name="viewport"></meta>
+<!-- Bootstrap 3.3.5 -->
+<link rel="stylesheet" href="resources/css/bootstrap/css/bootstrap.min.css"></link>
+<!-- Font Awesome -->
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"></link>
+<!-- Ionicons -->
+<link rel="stylesheet"
+	href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"></link>
+<!-- Theme style -->
+<link rel="stylesheet" href="resources/css/dist/css/AdminLTE.min.css"></link>
+<!-- AdminLTE Skins. Choose a skin from the css/skins
+             folder instead of downloading all of them to reduce the load. -->
+<link rel="stylesheet" href="resources/css/dist/css/skins/_all-skins.min.css"></link>
+<!-- iCheck -->
+<link rel="stylesheet" href="resources/css/plugins/iCheck/flat/blue.css"></link>
+<!-- Morris chart -->
+<link rel="stylesheet" href="resources/css/plugins/morris/morris.css"></link>
+<!-- Date Picker -->
+<link rel="stylesheet" href="resources/css/plugins/datepicker/datepicker3.css"></link>
+<!-- Daterange picker -->
+<link rel="stylesheet"
+	href="resources/css/plugins/daterangepicker/daterangepicker-bs3.css"></link>
+</head>
+<body class="hold-transition skin-blue sidebar-mini">
+	<div class="wrapper">
+
+		<div id="page">
+
+			<div id="header">
+				<ui:insert name="header">
+					<ui:include src="header.xhtml" />
+				</ui:insert>
+			</div>
+
+			<!-- Left side column. contains the logo and sidebar -->
+			<div id="mainSidebar">
+				<ui:insert name="mainSidebar">
+					<ui:include src="mainSidebar.xhtml" />
+				</ui:insert>
+			</div>
+
+			<div id="content">
+				<ui:insert name="content">
+					<ui:include src="content.xhtml" />
+				</ui:insert>
+			</div>
+
+			<div id="footer">
+				<ui:insert name="footer">
+					<ui:include src="footer.xhtml" />
+				</ui:insert>
+			</div>
+
+			<!-- Control Sidebar -->
+			<div id="controlSidebar">
+				<ui:insert name="controlSidebar">
+					<ui:include src="controlSidebar.xhtml" />
+				</ui:insert>
+			</div>
+		</div>
+	</div>
+	<!-- jQuery 2.1.4 -->
+	<script src="resources/css/plugins/jQuery/jQuery-2.1.4.min.js"></script>
+	<!-- jQuery UI 1.11.4 -->
+	<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+	<!-- Bootstrap 3.3.5 -->
+	<script src="resources/css/bootstrap/js/bootstrap.min.js"></script>
+	<!-- Morris.js charts -->
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+	<script src="resources/css/plugins/morris/morris.min.js"></script>
+	<!-- daterangepicker -->
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.2/moment.min.js"></script>
+	<script src="resources/css/plugins/daterangepicker/daterangepicker.js"></script>
+	<!-- datepicker -->
+	<script src="resources/css/plugins/datepicker/bootstrap-datepicker.js"></script>
+	<!-- AdminLTE App -->
+	<script src="resources/css/dist/js/app.min.js"></script>
+	<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+	<script src="resources/css/dist/js/pages/dashboard.js"></script>
+</body>
+</html>
